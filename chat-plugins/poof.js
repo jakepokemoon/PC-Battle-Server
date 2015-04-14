@@ -38,12 +38,6 @@ exports.commands = {
 			if (message.indexOf('{{user}}') < 0)
 				message = '{{user}} ' + message;
 			message = message.replace(/{{user}}/g, user.name);
-
-			room.addRaw(Tools.escapeHTML(message));
-			user.leaveRoom(room);
-		} else {
-			user.leaveRoom(room);
-		}
 	},
 
 	poofoff: 'nopoof',
