@@ -3,8 +3,7 @@ const pokemoonjake = [
 ];
 
 const skytrainerash = [
-	"went to find people to flop on.",
-	"got swallowed whole by a Snorlax."
+	"Co-owner of pokemoon forum and server!",
 ];
 
 exports.commands = {
@@ -24,7 +23,7 @@ exports.commands = {
 
 			room.addRaw(Tools.escapeHTML(message));
 			user.leaveRoom(room);
-		} else if (user.name === 'POKEMOONJAKE') {
+		} else if (user.name === 'POKEMOONJAKE' || user.name === 'POKEMOONJAKE') {
 			var message = target || pokemoonjake[Math.floor(Math.random() * pokemoonjake.length)];
 
 			room.addRaw(Tools.escapeHTML(message));
